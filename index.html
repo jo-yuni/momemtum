@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>바닐라 JS로 크롬앱 만들기</title>
+</head>
+
+<body>
+    <form id="loginForm" class="hidden">
+        <input required maxlength="15" type="text" placeholder="What is your name?"
+            style="border: 0; padding: 10px; width: 300px; height: 20px; text-align: center; background-color: white; color: black;">
+        <input type="submit" value="Log In" style="height: 40px; background-color: white; color: gray; border: 0;">
+    </form>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="toDoForm">
+        <input type="text" placeholder="Write a To Do and press Enter" required
+            style="border: 0; padding: 10px; width: 200px; height: 15px; text-align: center; background-color: white; color: black;">
+    </form>
+    <ul id="toDoList"></ul>
+    <div id="quote">
+        <span></span>
+        <span id="author"></span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="./js/greetings.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+
+</html>
